@@ -1,16 +1,25 @@
-#include "stdio.h"
+#include <stdio.h>
 
-int somme(int a, int b);
+void print_msg(const char *msg);
 
-int somme(int a, int b)
+int twice(int y);
+
+int main() {
+    int n, resultat;
+    printf("Entrez un nombre : ");
+    scanf("%d", &n);
+
+    resultat = twice(n);
+    printf("Le double de %d est %d\n", n, resultat);
+    print_msg("Fin de l'exemple");
+    return 0;
+}
+
+void print_msg(const char *msg) {
+    printf("%s\n", msg);
+}
+
+int twice(int y)
 {
-    int resultat;   // variable locale
-    resultat = a + b;
-    return resultat;
+    return 2 * y;
 }
- 
-int main(){
-    int lasomme =  somme(3, 4);
-    printf("%d", lasomme);
-}
-
