@@ -4,7 +4,7 @@
 int x = 10;
 
 // Statique globale : accessible uniquement dans ce fichier
-static int g = 100;
+static int g;
 
 void maFonction(int param) {
     // Locale automatique : disparait après l’appel, accessible seulement dans ce bloc

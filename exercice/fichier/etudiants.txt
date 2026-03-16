@@ -1,0 +1,5 @@
+4
+Pierre 20 14.5
+Paul 22 16.0
+Jean 19 12.75
+Ernest 21 15.25
