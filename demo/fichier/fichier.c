@@ -20,7 +20,7 @@ int main(){
     }
     int ligne;
     int colonne;
-    if (sscanf(buffer, "%d %d", &ligne, &colonne) == 1){
+    if (sscanf(buffer, "%d %d", &ligne, &colonne) != 2){
         exit(1);
     }
     printf("ligne : %d colonne : %d", ligne, colonne);
@@ -34,7 +34,7 @@ int main(){
             exit(1);
         }
         for (int c = 0; c < colonne; c++){
-        if (sscanf(buffer, "%f %f", &px, &py) == 1){
+        if (sscanf(buffer, "%f %f", &px, &py) != 2){
             exit(1);
         }
          Point p1 = {px, py};
